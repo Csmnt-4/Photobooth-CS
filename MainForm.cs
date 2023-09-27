@@ -123,7 +123,8 @@ namespace Photo_booth
 
         private void copyButton_Click(object sender, EventArgs e)
         {
-            if (File.Exists((baseDirectory + "\\photoboothImage.jpg")){
+            if (File.Exists((baseDirectory + "\\photoboothImage.jpg")))
+                {
                 Image newImage = Image.FromFile(baseDirectory + "\\photoboothImage.jpg");
                 Clipboard.SetDataObject(newImage);
             }
